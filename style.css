@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* background rotation animation  */
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    -45deg,
+    #4158d0,
+    #e560dc,
+    #ffb374,
+    #ef5f5f,
+    #d840b6
+  );
+  background-size: 400% 400%;
+  animation: bg 12s ease infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.timer-container {
+  background-color: aliceblue;
+  height: 50vh;
+  width: 30vh;
+  margin: 2%;
+  /* glass effect */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.timer-title {
+    margin: 2.5vh;
+  font-size: 2em;
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 4em;
+  text-align: center;
+}
+
+.start-button {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin-left: 50%;
+}
+
+.todo-container {
+  background-color: aliceblue;
+  height: 50vh;
+  width: 30vh;
+  margin: 2%;
+  /* glass effect */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
